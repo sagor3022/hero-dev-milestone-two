@@ -136,6 +136,13 @@
       align-items: center;
       justify-content: center;
     }
+     
+
+    .about-conteiner{
+      display: flex;
+    }
+
+
 
 
 
