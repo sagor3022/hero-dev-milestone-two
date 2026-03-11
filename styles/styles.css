@@ -1,0 +1,190 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  background:  #412567;
+  max-width: 1600px;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  align-items: center;
+}
+
+.menu a{
+  text-decoration: none;
+  color:#FFFFFF;
+}
+
+.logo{
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-left: 200px;
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.gradient{
+  background-image: linear-gradient(10deg, #F7E93F 0%,#F308B9 55%,#9100F8 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+.btn-gradient img{
+  align-items: center;
+  justify-content: center;
+  padding-left: 4px;
+
+}
+
+.btn-gradient{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-right: 200px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 10000px;
+  border: none;
+  padding: 12.4px 16px;
+  background-image: linear-gradient(60deg, #F7E93F 0%,#F308B9 55%,#9100F8 100%);
+}
+
+
+    .banner{
+    text-align: center;
+    background-image: url(/images/Image.png);
+    padding-top: 101px;
+    }
+
+    .banner img{
+      padding-top: 78px;
+      padding-left: 116px;
+      padding-right: 116px;
+      padding-bottom: 98px;
+      border-radius: 50%;
+      position: relative;
+      background-image: linear-gradient(10deg, #F7E93F 0%,#F308B9 55%,#9100F8 100%);
+    }
+
+    .banner h1{
+     padding-top: 40px;
+     color: #FFFFFF;
+     font-size: 2.8rem;
+     font-weight: bolder;
+    }
+
+    .banner p{
+      font-size: 1rem;
+      color: #FFFFFF;
+      opacity: 0.5;
+    }
+
+    .banner button{
+      margin-top: 24px;
+      margin-bottom: 101px;
+      
+    }
+    .banner-btn{
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      background-image: linear-gradient(10deg, #F7E93F 0%,#F308B9 55%,#9100F8 100%);
+      border-radius: 10000px;
+      padding-top: 12.5px;
+      padding-bottom: 12.5px;
+      padding-right: 20px;
+      padding-left: 48px;
+      border: none;
+    }
+
+    .btn-two{
+      color: #00FF88;
+      border: 1px solid #00FF88;
+      font-size: 1rem;
+      font-weight: 600;
+       border-radius: 10000px;
+      padding-top: 12.5px;
+      padding-bottom: 12.5px;
+      padding-right: 20px;
+      padding-left: 48px;
+      background: transparent;
+      margin-left: 8px;
+    }
+      
+
+    
+
+
+    .banner-btn img{
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
+
+
+
+
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+    .logo, 
+    .nav-links, 
+    .features,
+    .teams{
+        flex-direction: column;
+        margin-left: 20px;
+        
+    }
+
+    .menu{
+      display: none;
+    }
+    .btn-gradient{
+      display: none;
+    }
+
+    .team-img-container, 
+    .facts-container, 
+    .sponsor-companies
+    {
+        grid-template-columns: 1fr;
+    }
+
+    .facts-container{
+        justify-items: center;
+        gap: 24px;
+    }
+
+    .sponsor-companies{
+        justify-items: center;
+        gap: 50px;
+    }
+
+    .our-features{
+        margin-left: 20px;
+    }
+
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+}
